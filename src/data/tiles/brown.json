@@ -5400,5 +5400,38 @@
         }
       }
     ]
+  },
+  "DriftBrownB": {
+    "color": "brown",
+    "values": [
+      {
+        "angle": 210,
+        "percent": 0.75,
+        "value": 80
+      }
+    ],
+    "cities": [
+      {
+        "size": 2
+      }
+    ],
+    "track": [
+      {
+        "side": 1
+      },
+      {
+        "side": 3
+      },
+      {
+        "side": 5
+      }
+    ],
+    "labels": [
+      {
+        "angle": 150,
+        "percent": 0.75,
+        "label": "B"
+      }
+    ]
   }
 }

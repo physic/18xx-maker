@@ -2253,5 +2253,149 @@
         "side": 5
       }
     ]
+  },
+  "DriftTresham2": {
+    "color": "gray",
+    "labels": [
+      {
+        "label": "Port Tresham",
+        "side": 1,
+        "size": "small",
+        "percent": -0.85
+      }
+    ],
+    "cities": [
+      {
+        "size": 2
+      }
+    ],
+    "offBoardRevenue": {
+      "percent": 0.75,
+      "revenues": [
+        {
+          "color": "yellow",
+          "cost": "40"
+        },
+        {
+          "color": "brown",
+          "cost": "100"
+        }
+      ]
+    },
+    "track": [
+      {
+        "side": 1
+      },
+      {
+        "side": 2
+      },
+      {
+        "side": 3
+      },
+      {
+        "side": 5
+      },
+      {
+        "side": 6
+      }
+    ]
+  },
+  "DriftTresham4": {
+    "color": "gray",
+    "labels": [
+      {
+        "label": "Port Tresham",
+        "side": 1,
+        "size": "small",
+        "percent": -0.85
+      }
+    ],
+    "cities": [
+      {
+        "size": 4
+      }
+    ],
+    "offBoardRevenue": {
+      "percent": 0.75,
+      "revenues": [
+        {
+          "color": "yellow",
+          "cost": "40"
+        },
+        {
+          "color": "brown",
+          "cost": "100"
+        }
+      ]
+    },
+    "track": [
+      {
+        "side": 1
+      },
+      {
+        "side": 2
+      },
+      {
+        "side": 3
+      },
+      {
+        "side": 5
+      },
+      {
+        "side": 6
+      }
+    ]
+  },
+  "DriftBridge1": {
+    "color": "water",
+    "icons": [
+      {
+        "type": "port",
+        "angle": 240,
+        "percent": 0.2
+      }
+    ],
+    "track": [
+      {
+        "type": "gentle"
+      }
+    ],
+    "towns": [
+      {
+        "angle": 60,
+        "percent": 0.28,
+        "rotate": -30
+      }
+    ],
+    "values": [
+      {
+        "value": 20,
+        "angle": 180,
+        "percent": 0.6
+      }
+    ]
+  },
+  "DriftBridge2": {
+    "color": "water",
+    "icons": [
+      {
+        "type": "port",
+        "angle": -90,
+        "percent": 0.5
+      }
+    ],
+    "track": [
+      {
+        "type": "straight"
+      }
+    ],
+    "towns": [{}],
+    "values": [
+      {
+        "value": 20,
+        "angle": 90,
+        "percent": 0.5
+      }
+    ]
   }
 }

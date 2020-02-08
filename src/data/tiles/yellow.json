@@ -1858,5 +1858,37 @@
         "side": 5
       }
     ]
+  },
+  "DriftRockwell": {
+    "color": "yellow",
+    "labels": [
+      {
+        "label": "Rockwell",
+        "side": 1,
+        "size": "small",
+        "percent": -0.65
+      },
+      {
+        "label": "Homestead",
+        "side": 1,
+        "size": "small",
+        "percent": -0.45
+      }
+    ],
+    "values": [
+      {
+        "angle": 90,
+        "percent": 0.5,
+        "value": 40
+      }
+    ],
+    "towns": [
+      {}
+    ],
+    "track": [
+      {
+        "side": 1
+      }
+    ]
   }
 }
