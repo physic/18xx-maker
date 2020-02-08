@@ -4,34 +4,12 @@ import Color from "../data/Color";
 import * as uuid from "uuid";
 
 import logos from "../data/logos";
-
-const bleedAdjust = (bleed, percent) => {
-  let ratio = 0.833333333;
-
-  if(bleed) {
-    if(percent >= 50) {
-      return `${((percent-50) * ratio) + 50}%`;
-    } else {
-      return `${50 - ((50-percent) * ratio)}%`;
-    }
-  } else {
-    return `${percent}%`;
-  }
-};
-
-const radialBleedAdjust = (bleed, percent) => {
-  let ratio = 0.833333333;
-
-  if(bleed) {
-    return `${percent * ratio}%`;
-  } else {
-    return `${percent}%`;
-  }
-};
+import icons from "../data/icons";
 
 const Token = ({
   logo, // The SVG logo to display on this token
   icon, // The path-based icon (defined in App.jsx) to display on this token
+  iconColor, // The color to use for the svg icon
   label, // The text label to use on this token
   labelColor, // What color to use for writing the label text
   color, // What color is this token using as a background
@@ -70,9 +48,6 @@ const Token = ({
   //   type = "logo";
   // }
 
-  // Gradient to use as the background of the token
-  let gradient = null;
-
   // Array of svg elements to add to the token
   let shapes = [];
 
@@ -83,9 +58,6 @@ const Token = ({
       <circle cx="0" cy="0" r={width + (bleed ? 5 : 0)} />
     </clipPath>
   );
-
-  // Random id for gradients to use
-  let id = uuid.v4();
 
   return (
     <Color>
@@ -126,7 +98,7 @@ const Token = ({
           let size = 2 * width;
           let Component = svg.Component;
           shapes.push(
-            <Component className={`color-main-${color}${reserved ? " color-reserved" : ""}`}
+            <Component key="logo" className={`color-main-${color}${reserved ? " color-reserved" : ""}`}
                        x={start} y={start}
                        height={size} width={size}/>
           );
@@ -138,10 +110,10 @@ const Token = ({
 
           if (square) {
             shapes.push(
-              <g transform={`rotate(${angle || 0})`}>
+              <g key="square" transform={`rotate(${angle || 0})`}>
                 <rect rx={width * 0.08} ry={width * 0.08}
-                      x={width * -0.7} y={width * -0.7}
-                      width={width * 1.4} height={width * 1.4}
+                      x={width * -0.75} y={width * -0.75}
+                      width={width * 1.5} height={width * 1.5}
                       fill={c(square)} />
               </g>
             );
@@ -152,16 +124,16 @@ const Token = ({
             shapes.push(<g key="quarters" transform={`rotate(${angle || 0})`}>
                           <rect key="upperLeft" x="-50" y="-50" width="50" height="50"
                                 fill={c(quarters[0])}
-                                clipPath={`url(#${clipId})`}/>,
+                                clipPath={`url(#${clipId})`}/>
                           <rect key="upperRight" x="0" y="-50" width="50" height="50"
                                 fill={c(quarters[1])}
-                                clipPath={`url(#${clipId})`}/>,
+                                clipPath={`url(#${clipId})`}/>
                           <rect key="lowerLeft" x="-50" y="0" width="50" height="50"
                                 fill={c(quarters[2])}
-                                clipPath={`url(#${clipId})`}/>,
+                                clipPath={`url(#${clipId})`}/>
                           <rect key="lowerRight" x="0" y="0" width="50" height="50"
                                 fill={c(quarters[3])}
-                                clipPath={`url(#${clipId})`}/>,
+                                clipPath={`url(#${clipId})`}/>
                         </g>);
           }
 
@@ -169,50 +141,50 @@ const Token = ({
             shapes.push(<g key="halves" transform={`rotate(${angle || 0})`}>
                           <rect key="upper" x="-50" y="-50" width="100" height="50"
                                 fill={c(halves[0])}
-                                clipPath={`url(#${clipId})`}/>,
+                                clipPath={`url(#${clipId})`}/>
                           <rect key="lower" x="-50" y="0" width="100" height="50"
                                 fill={c(halves[1])}
-                                clipPath={`url(#${clipId})`}/>,
+                                clipPath={`url(#${clipId})`}/>
                         </g>);
           }
 
           if (stripes) {
-            gradient = (
-              <linearGradient id={id} x1="0" y1="0" x2="0" y2="1">
-                <stop offset={bleedAdjust(bleed,12.5)} stopColor={c(color)}/>
-                <stop offset={bleedAdjust(bleed,12.5)} stopColor={c(stripes)}/>
-                <stop offset={bleedAdjust(bleed,25)} stopColor={c(stripes)}/>
-                <stop offset={bleedAdjust(bleed,25)} stopColor={c(color)}/>
-                <stop offset={bleedAdjust(bleed,75)} stopColor={c(color)}/>
-                <stop offset={bleedAdjust(bleed,75)} stopColor={c(stripes)}/>
-                <stop offset={bleedAdjust(bleed,87.5)} stopColor={c(stripes)}/>
-                <stop offset={bleedAdjust(bleed,87.5)} stopColor={c(color)}/>
-              </linearGradient>
-            );
+            let stripeWidth = width / 4;
+            shapes.push(<g key="stripes" transform={`rotate(${angle || 0})`}>
+                          <rect key="upper"
+                                x="-50" y={-width * 0.5 - stripeWidth}
+                                width="100" height={stripeWidth}
+                                fill={c(stripes)}
+                                clipPath={`url(#${clipId})`}/>
+                          <rect key="lower"
+                                x="-50" y={width * 0.5}
+                                width="100" height={stripeWidth}
+                                fill={c(stripes)}
+                                clipPath={`url(#${clipId})`}/>
+                        </g>);
           }
 
           if (stripe) {
-            gradient = (
-              <linearGradient id={id}>
-                <stop offset={bleedAdjust(bleed,38)} stopColor={c(color)}/>
-                <stop offset={bleedAdjust(bleed,38)} stopColor={c(stripe)}/>
-                <stop offset={bleedAdjust(bleed,62)} stopColor={c(stripe)}/>
-                <stop offset={bleedAdjust(bleed,62)} stopColor={c(color)}/>
-              </linearGradient>
-            );
+            let stripeWidth = width / 2;
+            shapes.push(<g key="stripe" transform={`rotate(${angle || 0})`}>
+                          <rect key="upper"
+                                x={-0.5 * stripeWidth} y="-50"
+                                width={stripeWidth} height="100"
+                                fill={c(stripe)}
+                                clipPath={`url(#${clipId})`}/>
+                        </g>);
           }
 
           if (target) {
-            gradient = (
-              <radialGradient id={id}>
-                <stop offset={radialBleedAdjust(bleed,25)} stopColor={c(target)}/>
-                <stop offset={radialBleedAdjust(bleed,25)} stopColor={c(color)}/>
-                <stop offset={radialBleedAdjust(bleed,50)} stopColor={c(color)}/>
-                <stop offset={radialBleedAdjust(bleed,50)} stopColor={c(target)}/>
-                <stop offset={radialBleedAdjust(bleed,75)} stopColor={c(target)}/>
-                <stop offset={radialBleedAdjust(bleed,75)} stopColor={c(color)}/>
-              </radialGradient>
-            );
+            shapes.push(<g key="target">
+                          <circle
+                            cx="0" cy="0"
+                            r={width * 0.625}
+                            fill="none"
+                            stroke={c(target)}
+                            strokeWidth={width / 4}
+                            clipPath={`url(#${clipId})`}/>
+                        </g>);
           }
 
           if (bar) {
@@ -232,17 +204,29 @@ const Token = ({
           if (labelColor) {
             textFill = c(labelColor);
           }
-
-          // Fill the token with the gradient if we set it
-          if (gradient) {
-            tokenFill = `url(#${id})`;
-          }
         }
 
         let content = [];
         if (icon) {
-          content.push(<use key="icon" href={`#${icon}`} transform="scale(1.66666 1.66666)" />);
+          let iconSvg = icons[icon];
+          let Component = iconSvg.Component;
+
+          let classes = [];
+          if (iconColor) {
+            classes.push(`icon-color-main-${iconColor}`);
+          }
+          if (reserved) {
+            classes.push("color-reserved");
+          }
+
           if (label) {
+            // Label and icon, position accordingly
+            let x = -0.5 * width;
+            let y = -0.75 * width;
+            let size = 1 * width;
+            content.push(<Component key="icon" className={classes.join(" ")}
+                                    x={x} y={y}
+                                    height={size} width={size} />);
             content.push(<text
                            key="text"
                            fontFamily="display"
@@ -252,32 +236,41 @@ const Token = ({
                            stroke={textStroke}
                            fill={textFill}
                            x="0"
-                           y={(width * 0.24) + 12}
+                           y={(width * 0.12) + 12}
                          >
                            {label}
                          </text>
                         );
+          } else {
+            let start = -0.75 * width;
+            let size = 1.5 * width;
+            content.push(<Component key="icon" className={classes.join(" ")}
+                                    x={start} y={start}
+                                    height={size} width={size} />);
           }
         } else if (label && label.length > 0) {
           let fontSize = width * 0.64;
           let y = width * 0.22;
-          if (label.length > 4) {
+          if (label.length > 3) {
+            fontSize = fontSize * 0.9;
+            y = y * 0.9;
+          } else if (label.length > 4) {
             fontSize = fontSize * 0.8;
             y = y * 0.8;
           }
           content.push(<text
-                         key="text"
-                         fontFamily="display"
-                         fontSize={fontSize}
-                         textAnchor="middle"
-                         strokeWidth="0.5"
-                         stroke={textStroke}
-                         fill={textFill}
-                         x="0"
-                         y={y}
-                       >
-                         {label}
-                       </text>
+                          key="text"
+                          fontFamily="display"
+                          fontSize={fontSize}
+                          textAnchor="middle"
+                          strokeWidth="0.5"
+                          stroke={textStroke}
+                          fill={textFill}
+                          x="0"
+                          y={y}
+                     >
+                       {label}
+                     </text>
                       );
         }
 
@@ -285,7 +278,6 @@ const Token = ({
         return (
           <g>
             {clip}
-            {gradient}
             <g transform={`rotate(${angle || 0})`}>
               <circle
                 cx="0"

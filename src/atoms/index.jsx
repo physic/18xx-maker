@@ -31,9 +31,15 @@ const atoms = [{
   group: "Values",
   examples: [{values: [{value: 20}]},
              {values: [{value: 60}]},
+             {values: [{value: 60, shape: "square"}]},
              {values: [{
-              "outerBorderColor": "green",
-              "value": 120
+               outerBorderColor: "green",
+               value: 120
+             }]},
+             {values: [{
+               outerBorderColor: "green",
+               shape: "square",
+               value: 120
              }]},
              {values: [{value: 1024}]},
              {values: [{value: "60/60"}]},
@@ -65,12 +71,17 @@ const atoms = [{
   examples: [{icons: [{type: "meat"}]},
              {icons: [{type: "coal"}]},
              {icons: [{type: "port"}]},
+             {icons: [{type: "fish"}]},
+             {icons: [{type: "tunnel"}]},
+             {icons: [{type: "token"}]},
+             {icons: [{type: "cylinder"}]},
              {icons: [{type: "tree"}]},
              {icons: [{type: "home"}]},
              {icons: [{type: "mail"}]},
              {icons: [{type: "boat"}]},
              {icons: [{type: "tracks"}]},
              {icons: [{type: "share"}]},
+             {icons: [{type: "share", color: "orange"}]},
              {icons: [{type: "charter"}]},
              {icons: [{type: "bridge"}]},
              {icons: [{type: "swamp"}]},
@@ -96,12 +107,18 @@ const atoms = [{
     {tokens: [{label:"GG", bar: true, stripe: "orange", color: "blue"}]},
     {tokens: [{label:"GG2", bar: true, stripe: "orange", color: "blue", angle: 45}]},
     {tokens: [{label:"HH", target: "orange", color: "blue", bar: true}]},
+    {tokens: [{label:"II", target: "orange", halves: ["purple", "blue"], bar: true}]},
     {tokens: [{label:"KO", color: "purple"}]},
     {tokens: [{company:"CPR"}]},
     {tokens: [{company:"PRR", destination: true}]},
     {tokens: [{company:"C&O", reserved: true}]},
     {tokens: [{logo:"dev/emacs"}]},
-    {tokens: [{icon:"coal"}]}
+    {tokens: [{icon:"coal"}]},
+    {tokens: [{icon:"port", iconColor:"red"}]},
+    {tokens: [{icon:"mail"}]},
+    {tokens: [{icon:"mail", iconColor:"orange"}]},
+    {tokens: [{icon:"tracks", label: "$100"}]},
+    {tokens: [{icon:"boat", iconColor:"red", label: "Free"}]}
   ]
 },{
   group: "Cities",
@@ -265,18 +282,18 @@ const atoms = [{
 
 const examples = R.addIndex(R.chain)((h,id) => {
   return <dd key={`example-${id}`}>
-           <Svg width="175.205" height="152" viewBox="-87.6025 -76 175.205 152">
-             <Hex hex={h} id={`${id}`} border={true} bleed={true} />
-           </Svg>
-           <pre>{JSON.stringify(h, null, 2)}</pre>
-         </dd>;
+      <Svg width="175.205" height="152" viewBox="-87.6025 -76 175.205 152">
+        <Hex hex={h} id={`${id}`} border={true} bleed={true} />
+      </Svg>
+      <pre>{JSON.stringify(h, null, 2)}</pre>
+    </dd>;
 });
 
 const groups = R.addIndex(R.chain)((g,id) => {
   return <dl key={`group-${id}`}>
-           <dt>{g.group}</dt>
-           {examples(g.examples)}
-         </dl>;
+      <dt>{g.group}</dt>
+      {examples(g.examples)}
+    </dl>;
 });
 
 const Atoms = () => {
