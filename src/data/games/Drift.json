@@ -327,6 +327,10 @@
             },
             {
               "color": "brown",
+              "cost": "80"
+            },
+            {
+              "color": "grey",
               "cost": "100"
             }
           ]
@@ -386,6 +390,10 @@
             },
             {
               "color": "brown",
+              "cost": "60"
+            },
+            {
+              "color": "grey",
               "cost": "80"
             }
           ]
@@ -442,6 +450,10 @@
             },
             {
               "color": "brown",
+              "cost": "60"
+            },
+            {
+              "color": "grey",
               "cost": "80"
             }
           ]
@@ -501,6 +513,10 @@
             },
             {
               "color": "brown",
+              "cost": "60"
+            },
+            {
+              "color": "grey",
               "cost": "80"
             }
           ]
@@ -554,6 +570,10 @@
             },
             {
               "color": "brown",
+              "cost": "60"
+            },
+            {
+              "color": "grey",
               "cost": "80"
             }
           ]
@@ -613,6 +633,10 @@
             },
             {
               "color": "brown",
+              "cost": "60"
+            },
+            {
+              "color": "grey",
               "cost": "80"
             }
           ]
@@ -672,6 +696,10 @@
             },
             {
               "color": "brown",
+              "cost": "60"
+            },
+            {
+              "color": "grey",
               "cost": "80"
             }
           ]
@@ -725,6 +753,10 @@
             },
             {
               "color": "brown",
+              "cost": "60"
+            },
+            {
+              "color": "grey",
               "cost": "80"
             }
           ]
@@ -784,6 +816,10 @@
             },
             {
               "color": "brown",
+              "cost": "60"
+            },
+            {
+              "color": "grey",
               "cost": "80"
             }
           ]
@@ -840,6 +876,10 @@
             },
             {
               "color": "brown",
+              "cost": "80"
+            },
+            {
+              "color": "grey",
               "cost": "100"
             }
           ]
@@ -893,6 +933,10 @@
             },
             {
               "color": "brown",
+              "cost": "80"
+            },
+            {
+              "color": "grey",
               "cost": "100"
             }
           ]
@@ -949,6 +993,10 @@
             },
             {
               "color": "brown",
+              "cost": "80"
+            },
+            {
+              "color": "grey",
               "cost": "100"
             }
           ]
@@ -1011,6 +1059,10 @@
             },
             {
               "color": "brown",
+              "cost": "80"
+            },
+            {
+              "color": "grey",
               "cost": "100"
             }
           ]
@@ -1067,6 +1119,10 @@
             },
             {
               "color": "brown",
+              "cost": "100"
+            },
+            {
+              "color": "grey",
               "cost": "120"
             }
           ]
@@ -1126,6 +1182,10 @@
             },
             {
               "color": "brown",
+              "cost": "100"
+            },
+            {
+              "color": "grey",
               "cost": "120"
             }
           ]
