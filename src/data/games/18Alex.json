@@ -1,0 +1,1349 @@
+{
+  "info": {
+    "title": "18Alex",
+    "designer": "Alex Rockwell",
+    "background": "purple",
+    "orientation": "horizontal",
+    "marketTokens": 2,
+    "currency": "L.#",
+    "titleSize": 80,
+    "titleX": 1900,
+    "titleY": 1650
+  },
+  "colors": {
+    "pink": "pink"
+  },
+  "tokens": [
+    "Round"
+  ],
+  "ipo": false,
+  "wip": true,
+  "bank": 14400,
+  "players": [
+    {
+      "number": 3,
+      "certLimit": 21,
+      "capital": 1170
+    },
+    {
+      "number": 4,
+      "certLimit": 16,
+      "capital": 875
+    },
+    {
+      "number": 5,
+      "certLimit": 13,
+      "capital": 700
+    },
+    {
+      "number": 6,
+      "certLimit": 11,
+      "capital": 585
+    },
+    {
+      "number": 7,
+      "certLimit": 9,
+      "capital": 500
+    },
+    {
+      "number": 8,
+      "certLimit": 8,
+      "capital": 440
+    }
+  ],
+  "privates": [
+    {
+      "name": "Tuscany - SFLP",
+      "bid": 20,
+      "price": 50,
+      "id": 1,
+      "company": "SFLP"
+    },
+    {
+      "name": "Tuscany - SFMA",
+      "bid": 20,
+      "price": 50,
+      "id": 1,
+      "company": "SFMA"
+    },
+    {
+      "name": "Tuscany - SSFL",
+      "bid": 20,
+      "price": 50,
+      "id": 1,
+      "company": "SSFL"
+    },
+    {
+      "name": "SFTC",
+      "bid": 20,
+      "price": 50,
+      "id": 2,
+      "company": "SFTC"
+    },
+    {
+      "name": "SFTN",
+      "bid": 20,
+      "price": 50,
+      "id": 3,
+      "company": "SFTN"
+    },
+    {
+      "name": "SFTG",
+      "bid": 20,
+      "price": 50,
+      "id": 4,
+      "company": "SFTG"
+    },
+    {
+      "name": "SB",
+      "bid": 20,
+      "price": 50,
+      "id": 5,
+      "company": "SB"
+    },
+    {
+      "name": "SFL",
+      "bid": 20,
+      "price": 50,
+      "id": 6,
+      "company": "SFL"
+    },
+    {
+      "name": "CTS",
+      "bid": 20,
+      "price": 50,
+      "id": 7,
+      "company": "CTS"
+    },
+    {
+      "name": "IFAI",
+      "bid": 20,
+      "price": 50,
+      "id": 8,
+      "company": "IFAI"
+    },
+    {
+      "name": "RATF",
+      "bid": 20,
+      "price": 50,
+      "id": 9,
+      "company": "RATF"
+    },
+    {
+      "name": "AFI",
+      "bid": 20,
+      "price": 50,
+      "id": 10,
+      "company": "AFI"
+    }
+  ],
+  "tiles": {
+    "1": 1,
+    "2": 1,
+    "3": 3,
+    "4": 3,
+    "5": 4,
+    "6": 4,
+    "7": 8,
+    "8": 16,
+    "9": 11,
+    "55": 1,
+    "56": 1,
+    "57": 4,
+    "58": 3,
+    "69": 1,
+    "201": 2,
+    "202": 2,
+    "621": 2,
+    "630": 1,
+    "631": 1,
+    "632": 1,
+    "633": 1,
+
+    "12": 1,
+    "13": 1,
+    "14": 2,
+    "15": 2,
+    "16": 2,
+    "17": 2,
+    "18": 2,
+    "19": 2,
+    "20": 2,
+    "21": 2,
+    "22": 2,
+    "23": 3,
+    "24": 3,
+    "25": 3,
+    "26": 2,
+    "27": 2,
+    "28": 2,
+    "29": 2,
+    "30": 2,
+    "31": 2,
+    "87": 2,
+    "88": 2,
+    "144": 2,
+    "204": 2,
+    "205": 1,
+    "206": 1,
+    "207": 2,
+    "208": 2,
+    "613": 3,
+    "614": 4,
+    "615": 1,
+    "619": 2,
+    "622": 2,
+    "624": 1,
+    "625": 1,
+    "626": 1
+  },
+  "stock": {
+    "type": "1D",
+    "market": [
+      40,45,50,55,60,
+      {
+        "value": 67,
+        "par": true
+      },
+      75,82,90,
+      {
+        "value": 100,
+        "par": true
+      },
+      110,120,135,
+      {
+        "value": 150,
+        "par": true
+      },
+      165,180,200,
+      {
+        "value": 225,
+        "par": true
+      },
+      250,275,
+      {
+        "value": 300,
+        "par": true
+      },
+      330,360,400,450,500,550,600,650,700
+    ],
+    "legend": []
+  },
+  "pools": [
+    {
+      "name": "Bank Pool",
+      "notes": [
+        {
+          "color": "water",
+          "note": "Shares in the bank pool pay dividends to the bank"
+        },
+        {
+          "color": "water",
+          "note": "Shares in the treasury pay dividends to the corporation"
+        },
+        {
+          "color": "red",
+          "icon": "times",
+          "note": "Unoperated companies may not be sold"
+        }
+      ]
+    }
+  ],
+  "trains": [
+    {
+      "name": "2",
+      "quantity": 12,
+      "price": 100,
+      "color": "yellow",
+      "info": [
+        {
+          "color": "brown",
+          "note": "Rusted on 5/3P"
+        }
+      ]
+    },
+    {
+      "name": "3",
+      "quantity": 8,
+      "price": 250,
+      "color": "green",
+      "info": [
+        {
+          "color": "grey",
+          "note": "Rusted on 6"
+        }
+      ]
+    },
+    {
+      "name": "4+",
+      "quantity": 8,
+      "price": 250,
+      "color": "green",
+      "info": [
+        {
+          "color": "grey",
+          "note": "Obsoletes on 6"
+        }
+      ]
+    },
+    {
+      "name": "5",
+      "quantity": 4,
+      "price": 500,
+      "color": "brown",
+      "info": [
+        {
+          "color": "grey",
+          "note": "Rusted on 7"
+        }
+      ]
+    },
+    {
+      "name": "3P",
+      "quantity": 4,
+      "price": 500,
+      "color": "brown",
+      "info": [
+        {
+          "color": "yellow",
+          "note": "Permanent"
+        }
+      ]
+    },
+    {
+      "name": "6",
+      "quantity": 4,
+      "price": 900,
+      "color": "grey",
+      "info": [
+        {
+          "color": "yellow",
+          "note": "Permanent"
+        }
+      ]
+    },
+    {
+      "name": "7",
+      "quantity": 4,
+      "price": 1200,
+      "color": "grey",
+      "info": [
+        {
+          "color": "yellow",
+          "note": "Permanent"
+        }
+      ]
+    },
+    {
+      "name": "D",
+      "quantity": 8,
+      "price": 900,
+      "color": "grey",
+      "info": [
+        {
+          "color": "yellow",
+          "note": "Permanent"
+        }
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "name": "SR",
+      "color": "white"
+    },
+    {
+      "name": "OR1",
+      "color": "gray"
+    },
+    {
+      "name": "OR2",
+      "color": "gray"
+    }
+  ],
+  "turns": [
+    {
+      "name": "Stock Round",
+      "steps": [
+        "Sell any number of certificates",
+        "Buy one certificate from treasury or bank pool, or start company"
+      ],
+      "ordered": true
+    },
+    {
+      "name": "Operating Round",
+      "steps": [
+        "Lay or upgrade one (or more) track tile",
+        "Place one token",
+        "Run trains",
+        "Purchase a token from another corporation",
+        "Purchase trains",
+        "Sell treasury stock to the bank pool",
+        "Buy one stock certificate from the bank pool or IPO",
+        "Start another corporation",
+        "Merge with another corporation of the same class",
+        "Transform from minor to major"
+      ],
+      "ordered": true,
+      "optional": []
+    }
+  ],
+  "phases": [
+    {
+      "minor": true,
+      "phase": "Yellow",
+      "train": ["2"],
+      "limit": "3",
+      "number": "8",
+      "tiles": "green",
+      "price": 100
+    },
+    {
+      "phase": "Yellow",
+      "train": ["2"],
+      "limit": "4",
+      "number": "8",
+      "tiles": "green",
+      "notes": "May lay two tiles, second from a second station.",
+      "price": 100
+    },
+    {
+      "minor": true,
+      "phase": "Green",
+      "train": ["3","4+"],
+      "limit": "3",
+      "number": "6",
+      "tiles": "green",
+      "price": 250
+    },
+    {
+      "phase": "Green",
+      "train": ["3","4+"],
+      "limit": "4",
+      "number": "6",
+      "tiles": "green",
+      "price": 250
+    },
+    {
+      "minor": true,
+      "phase": "Brown",
+      "train": ["3P","5"],
+      "limit": "3",
+      "number": "4",
+      "tiles": "green",
+      "notes": "Concessions are removed. Tuscan merge and Ferdinandea secession are performed.",
+      "price": 350
+    },
+    {
+      "phase": "Brown",
+      "train": ["3P","5"],
+      "limit": "4",
+      "number": "4",
+      "tiles": "green",
+      "notes": "Concessions are removed. Tuscan merge and Ferdinandea secession are performed.",
+      "price": 350
+    },
+    {
+      "minor": true,
+      "phase": "Grey",
+      "train": ["6","D","7"],
+      "limit": "3",
+      "number": "8",
+      "tiles": "brown",
+      "price": [900,1200,900]
+    },
+    {
+      "phase": "Grey",
+      "train": ["6","D","7"],
+      "limit": "4",
+      "number": "8",
+      "tiles": "brown",
+      "price": [900,1200,900]
+    }
+  ],
+  "tokenTypes": {
+    "minor": [
+      "",
+      ""
+    ],
+    "default": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "shareTypes": {
+    "minor": [
+      {
+        "quantity": 1,
+        "label": "President's Certificate",
+        "percent": 40,
+        "shares": 2
+      },
+      {
+        "quantity": 3,
+        "percent": 20,
+        "shares": 1
+      }
+    ],
+    "default": [
+      {
+        "quantity": 1,
+        "label": "President's Certificate",
+        "percent": 20,
+        "shares": 2
+      },
+      {
+        "quantity": 8,
+        "percent": 10,
+        "shares": 1
+      }
+    ]
+  },
+  "companies": [
+    {
+      "name": "Strada Ferrata Maria Antonia",
+      "minor": true,
+      "abbrev": "SFMA",
+      "tokens": [
+        "Firenze",
+        ""
+      ],
+      "color": "red"
+    },
+    {
+      "name": "Strada Ferrata da Lucca a Pistoia",
+      "minor": true,
+      "abbrev": "SFLP",
+      "tokens": [
+        "Lucca",
+        ""
+      ],
+      "color": "lime"
+    },
+    {
+      "name": "Società per la Strada Ferrata Leopolda",
+      "abbrev": "SSFL",
+      "tokens": [
+        "Pisa",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "purple"
+    },
+    {
+      "name": "Imperial Regia Strada Ferrata Ferdinandea",
+      "abbrev": "IRSFF",
+      "tokens": [
+        "Milano",
+        "Venezia",
+        "",
+        "",
+        ""
+      ],
+      "color": "orange"
+    },
+    {
+      "name": "Strada Ferrata da Torina a Genova",
+      "abbrev": "SFTG",
+      "tokens": [
+        "Torino (S)",
+        "Alessandria",
+        "",
+        "",
+        ""
+      ],
+      "color": "blue"
+    },
+    {
+      "name": "Strada di Ferro da Torina a Novara",
+      "abbrev": "SFTN",
+      "tokens": [
+        "Torino (N)",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "brown"
+    },
+    {
+      "name": "Strada di Ferro da Torino a Cuneo",
+      "abbrev": "SFTC",
+      "variant": "V2",
+      "tokens": [
+        "Cuneo",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "yellow"
+    },
+    {
+      "name": "Strade Ferrate Livornesi",
+      "abbrev": "SFLi",
+      "tokens": [
+        "Pisa",
+        "Firenze",
+        "",
+        "",
+        ""
+      ],
+      "color": "brown"
+    },
+    {
+      "name": "Strade Ferrate del Sud dell'Austria",
+      "abbrev": "SB",
+      "variant": "V2",
+      "tokens": [
+        "Venezia",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "yellow"
+    },
+    {
+      "name": "Strade Ferrate della Lombardia & dell'Italia Centrale",
+      "abbrev": "SFL",
+      "variant": "V2",
+      "tokens": [
+        "Milano",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "cyan"
+    },
+    {
+      "name": "Società Leonardo Da Vinci",
+      "abbrev": "SLDV",
+      "minor": true,
+      "color": "black"
+    },
+    {
+      "name": "Ferrovie Trans Padane",
+      "abbrev": "FTP",
+      "minor": true,
+      "color": "gray"
+    },
+    {
+      "name": "Compagnia Trasporti La Patria",
+      "abbrev": "CTLP",
+      "minor": true,
+      "color": "purple"
+    },
+    {
+      "name": "Compagnia Ferroviaria Conte di Cavour",
+      "abbrev": "CFCC",
+      "color": "green"
+    },
+    {
+      "name": "Compagnia Trasporti Dante Alighieri",
+      "abbrev": "CTDA",
+      "color": "cyan"
+    },
+    {
+      "name": "Impresa Centrale Strade Ferrate",
+      "abbrev": "ICSF",
+      "color": "lime"
+    },
+    {
+      "name": "Reale Società Ferroviaria Sabauda",
+      "abbrev": "RSFS",
+      "color": "purple"
+    },
+    {
+      "name": "Compagnia Garibaldi per i Trasporti Ferroviari",
+      "abbrev": "CGTF",
+      "color": "red"
+    },
+    {
+      "name": "Regia Azienda Trasporti Ferroviari",
+      "abbrev": "RATF",
+      "color": "orange"
+    },
+    {
+      "name": "Compagnia Trasporti Subalpini",
+      "abbrev": "CTS",
+      "color": "gray"
+    },
+    {
+      "name": "Impresa Ferroviaria Alta Italia",
+      "abbrev": "IFAI",
+      "color": "pink"
+    },
+    {
+      "name": "Impresa Latina Trasporti su Ferro",
+      "abbrev": "ILTF",
+      "color": "green"
+    },
+    {
+      "name": "Azienda Trasporti Ferroviari Ausonia",
+      "abbrev": "ATFA",
+      "color": "brown"
+    },
+    {
+      "name": "Azienda Ferroviaria Italica",
+      "abbrev": "AFI",
+      "color": "lavender"
+    },
+    {
+      "name": "Strada di Ferro da Torino a Cuneo",
+      "abbrev": "SFTC",
+      "minor": true,
+      "color": "yellow",
+      "variant": "V1",
+      "tokens": [
+        "Cuneo",
+        ""
+      ]
+    },
+    {
+      "name": "Strade di Ferro Venete",
+      "abbrev": "SFV",
+      "minor": true,
+      "color": "yellow",
+      "variant": "V1",
+      "tokens": [
+        "Venezia",
+        ""
+      ]
+    },
+    {
+      "name": "Strade Ferrate Lombarde",
+      "abbrev": "SFL",
+      "minor": true,
+      "color": "cyan",
+      "variant": "V1",
+      "tokens": [
+        "Milano",
+        ""
+      ]
+    }
+  ],
+  "map": {
+    "print": "landscape",
+    "hexes": [
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 10, "angle": 180, "percent": 0.6}],
+        "track": [{"side": 1, "type": "offboard"}],
+        "removeBorders": [2],
+        "hexes": ["B1"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 10, "angle": 180, "percent": 0.6}],
+        "track": [{"side": 1, "type": "offboard"}],
+        "hexes": ["D1", "A10"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 20, "angle": 180, "percent": 0.6}],
+        "track": [{"side": 1, "type": "offboard"}],
+        "hexes": ["H1"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 20, "angle": 180, "percent": 0.6}],
+        "track": [{"side": 6, "type": "offboard"}],
+        "hexes": ["D5","M2"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 30, "angle": 180, "percent": 0.6}],
+        "track": [{"side": 5, "type": "offboard"}],
+        "removeBorders": [6],
+        "hexes": ["P11"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 30, "angle": 180, "percent": 0.6}],
+        "track": [{"side": 1, "type": "offboard"}],
+        "removeBorders": [5],
+        "hexes": ["A2"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 50, "angle": 180, "percent": 0.6}],
+        "track": [{"side": 1, "type": "offboard"}],
+        "removeBorders": [3],
+        "hexes": ["Q12"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 10, "angle": 180, "percent": 0.6}],
+        "track": [{"side": 5, "type": "offboard"}],
+        "hexes": ["P21"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 10, "angle": 180, "percent": 0.6}],
+        "track": [{"side": 6, "type": "offboard"}],
+        "hexes": ["C18"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 10, "angle": 180, "percent": 0.6}],
+        "track": [{"side": 3, "type": "offboard"},{"side":5,"type":"offboard"}],
+        "hexes": ["J7"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 20, "percent": 0.6}],
+        "track": [{"side": 4, "type": "offboard"}],
+        "hexes": ["A22"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 50, "percent": 0.6}],
+        "track": [{"side": 4, "type": "offboard"}],
+        "hexes": ["D23"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 10, "percent": 0.6}],
+        "track": [{"side": 6, "type": "offboard"}],
+        "hexes": ["G22"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 10, "percent": 0.6}],
+        "track": [{"side": 5, "type": "offboard"}],
+        "hexes": ["K24"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 40, "percent": 0.6}],
+        "track": [{"side": 3, "type": "offboard"}],
+        "hexes": ["I24"]
+      },
+      {
+        "color": "plain",
+        "hexes": ["A4", "B11", "C8", "C10", "D7", "E4", "H5", "H7",
+                  "I6","J9","J11","J13","K12","L11","L13","M6","N5",
+                  "O8","O10","O12","O14","Q8","M14","N11","P13","P17",
+                  "K14","J17","J19","K18","K20","L17","L21","N19","O20",
+                  "D13","E12","F15","G14","G16","G18","H13","I14","B13"]
+      },
+      {
+        "color": "plain",
+        "terrain": [{
+          "type": "mountain",
+          "cost": 50
+        }],
+        "hexes": ["O2","M8","N13","P9","H15","G20","B21","C22","E22","F23"]
+      },
+      {
+        "color": "plain",
+        "cities": [{}],
+        "hexes": ["B3", "B5", "C2", "C4", "D3","H3","I4","K6","L7",
+                  "P7","Q18","Q20","E20","H23","A20"]
+      },
+      {
+        "color": "plain",
+        "cities": [{"angle": 180,"percent":0.3}],
+        "terrain": [{"type": "mountain", "cost": 50, "percent": 0.5}],
+        "hexes": ["Q10"]
+      },
+      {
+        "color": "plain",
+        "centerTowns": [{"angle": 180,"percent":0.3}],
+        "terrain": [{"type": "mountain", "cost": 50, "percent": 0.5}],
+        "hexes": ["K22","H19"]
+      },
+      {
+        "color": "plain",
+        "cities": [{"companies":["SFL"],"angle": 180,"percent":0.3}],
+        "terrain": [{"type": "mountain", "cost": 50, "percent": 0.5}],
+        "hexes": ["J21"]
+      },
+      {
+        "color": "plain",
+        "labels": [{"label": "Y", "angle": 180, "percent": 0.667}],
+        "cities": [{}],
+        "hexes": ["M4","N21"]
+      },
+      {
+        "color": "plain",
+        "labels": [{"label": "Y", "angle": 180, "percent": 0.667}],
+        "cities": [{}],
+        "terrain": [{"type":"mountain","cost":50,"percent":0.667}],
+        "hexes": ["D21"]
+      },
+      {
+        "color": "plain",
+        "labels": [{"label": "Y", "angle": 180, "percent": 0.667}],
+        "cities": [{"companies":["AFI"]}],
+        "hexes": ["Q14"]
+      },
+      {
+        "color": "plain",
+        "cities": [{"companies": ["CTS"]}],
+        "hexes": ["E6", "F5"]
+      },
+      {
+        "color": "plain",
+        "cities": [{"companies": ["SFLP"]}],
+        "hexes": ["A12"]
+      },
+      {
+        "color": "plain",
+        "cities": [{"companies": ["SFMA"]}],
+        "hexes": ["B15"]
+      },
+      {
+        "color": "plain",
+        "cities": [{"companies": ["RATF"]}],
+        "hexes": ["L5", "N3"]
+      },
+      {
+        "color": "plain",
+        "cities": [{"companies": ["SB"]}],
+        "hexes": ["Q4", "Q6"]
+      },
+      {
+        "color": "plain",
+        "cities": [{"companies": ["IFAI"]}],
+        "hexes": ["D19"]
+      },
+      {
+        "color": "plain",
+        "centerTowns": [{}],
+        "hexes": ["C6","F13","I2","I8","L3","N9","P5","K10","N17","P15","P19","Q16",
+                  "D17","A14","B17","H21"]
+      },
+      {
+        "color": "plain",
+        "centerTowns": [{
+          "angle": 60,
+          "percent": 0.5
+        },{
+          "angle": 240,
+          "percent": 0.5
+        }],
+        "hexes": ["D9","N7","J15","E18","A18"]
+      },
+      {
+        "color": "yellow",
+        "cities": [{
+          "pass": true
+        }],
+        "terrain": [{
+          "percent": 0.4,
+          "cost": 100
+        }],
+        "hexes": ["C14","C16","E2","E10","E16","F19","G2","J5","K4","P3","O16","M22"]
+      },
+      {
+        "color": "green",
+        "cities": [{
+          "pass": true
+        }],
+        "terrain": [{
+          "percent": 0.6,
+          "cost": 200
+        }],
+        "hexes": ["A6", "B9", "G4", "G10","K8","I20"]
+      },
+      {
+        "color": "gray",
+        "hexes": ["B7","L9","O6","M12","N15","C12","D15","F17","C20"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[5],
+        "hexes": ["E8"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[2,6],
+        "hexes": ["F7"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[3,6],
+        "hexes": ["G8"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[3,1],
+        "hexes": ["H9"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[3],
+        "hexes": ["I12"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[2,4,6],
+        "cities": [{"companies":["SFTG"]}],
+        "track": [{"side":2},{"side":3},{"side":5}],
+        "offBoardRevenue": {
+          "percent": 0.667,
+          "revenues": [{
+            "color": "white",
+            "value": 60
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 80
+          }]
+        },
+        "hexes": ["H11"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[3,5],
+        "track": [{"side":2,"type":"straight"},
+                  {"side":1,"type":"sharp"},
+                  {"side":5,"type":"sharp"}],
+        "hexes": ["G12"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[6],
+        "hexes": ["F11"]
+      },
+      {
+        "color": "gray",
+        "track": [{"side":3,"type":"sharp"}],
+        "hexes": ["O18","O22"]
+      },
+      {
+        "color": "gray",
+        "track": [{"side":2,"type":"sharp"}],
+        "hexes": ["I22"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[1,2],
+        "hexes": ["M18"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[3,4],
+        "hexes": ["M20"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[5,6],
+        "hexes": ["L19"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[2],
+        "hexes": ["L15"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[5],
+        "track": [{"side":3,"type":"straight"},
+                  {"side":2,"type":"sharp"},
+                  {"side":6,"type":"sharp"}],
+        "hexes": ["K16"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[1,2],
+        "hexes": ["I16"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[3,4],
+        "hexes": ["I18"]
+      },
+      {
+        "color": "gray",
+        "removeBorders":[5,6],
+        "cities": [{"companies":["SFTC"]}],
+        "track": [{"side":1},{"side":2},{"side":3}],
+        "offBoardRevenue": {
+          "angle":180,
+          "percent": 0.667,
+          "revenues": [{
+            "color": "white",
+            "value": 10
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 60
+          }]
+        },
+        "hexes": ["H17"]
+      },
+      {
+        "color": "yellow",
+        "cities": [{"companies":["SFTG"]}],
+        "values": [{"value": 20, "percent": 0.667}],
+        "track": [{"side":5},{"side":6}],
+        "hexes": ["E14"]
+      },
+      {
+        "color": "yellow",
+        "cities": [{"companies":["SSFL"]}],
+        "values": [{"value": 20, "percent": 0.667}],
+        "track": [{"side":2},{"side":4}],
+        "hexes": ["B19"]
+      },
+      {
+        "color": "yellow",
+        "cities": [{"companies":["SFTN"]}],
+        "labels": [{"label": "Y", "angle": 180, "percent": 0.667}],
+        "values": [{"value": 30, "percent": 0.667}],
+        "track": [{"side":2},{"side":6}],
+        "hexes": ["I10"]
+      },
+      {
+        "color": "pink",
+        "cities": [{"size": 2}],
+        "values": [{"value": 10,"angle": 30,"percent":0.75}],
+        "track": [{"side": 1},{"side":4},{"side":5},{"side":6}],
+        "hexes": ["A16"]
+      },
+      {
+        "color": "pink",
+        "cities": [{"size": 2}],
+        "values": [{"value": 10,"angle": 30,"percent":0.75}],
+        "track": [{"side": 1},{"side":3},{"side":4},{"side":5},{"side":6}],
+        "hexes": ["D11"]
+      },
+      {
+        "color": "pink",
+        "cities": [{"size": 2}],
+        "values": [{"value": 10,"percent":0.667}],
+        "track": [{"side": 2},{"side":4},{"side":5},{"side":6}],
+        "hexes": ["M10"]
+      },
+      {
+        "color": "pink",
+        "cities": [{"size": 2, "companies":["SFL"]}],
+        "values": [{"value": 10,"percent":0.667}],
+        "track": [{"side": 2},{"side":3},{"side":4},{"side":5}],
+        "hexes": ["L23"]
+      },
+      {
+        "color": "pink",
+        "cities": [{"size": 3, "companies": ["SB"]}],
+        "track": [{"side": 2},{"side":4},{"side":6}],
+        "offBoardRevenue": {
+          "angle": 120,
+          "percent": 1,
+          "revenues": [{
+            "color": "white",
+            "value": 60
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 100
+          }]
+        },
+        "hexes": ["M16"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 90
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 180
+          }]
+        },
+        "track": [{"side": 1, "type": "offboard"},{"side": 5, "type": "offboard"}],
+        "hexes": ["F21"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 40
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 120
+          }]
+        },
+        "track": [{"side": 4, "type": "offboard"},{"side": 5, "type": "offboard"}],
+        "hexes": ["B23"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 90
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 180
+          }]
+        },
+        "track": [{"side": 4, "type": "offboard"},{"side": "6", "type": "offboard"}],
+        "hexes": ["A8"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 80
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 150
+          }]
+        },
+        "track": [{"side": 3, "type": "offboard"},{"side": 5, "type": "offboard"}],
+        "hexes": ["F3"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 60
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 140
+          }]
+        },
+        "track": [{"side": 1, "type": "offboard"}],
+        "hexes": ["K2"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 20
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 80
+          }]
+        },
+        "track": [{"side": 3, "type": "offboard"},{"side":6,"type":"offboard"}],
+        "hexes": ["O4"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 80
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 180
+          }]
+        },
+        "track": [{"side": 1, "type": "offboard"},{"side":2,"type":"offboard"}],
+        "hexes": ["Q2"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 120
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 200
+          }]
+        },
+        "track": [{"side": 6, "type": "offboard"}],
+        "hexes": ["F9"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 20
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 80
+          }]
+        },
+        "track": [{"side": 3, "type": "offboard"},{"side": 5, "type": "offboard"}],
+        "hexes": ["G6"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 60
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 140
+          }]
+        },
+        "track": [{"side":3,"type":"offboard"},{"side": 4, "type": "offboard"}],
+        "hexes": ["N23"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 40
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 120
+          }]
+        },
+        "track": [{"side": 4, "type": "offboard"},{"side":5,"type":"offboard"}],
+        "hexes": ["J23"]
+      },
+      {
+        "color": "offboard",
+        "offBoardRevenue": {
+          "revenues": [{
+            "color": "white",
+            "value": 80
+          },{
+            "color": "black",
+            "textColor": "white",
+            "value": 180
+          }]
+        },
+        "track": [{"side": 4, "type": "offboard"}],
+        "hexes": ["Q22"]
+      }
+    ]
+  }
+}
