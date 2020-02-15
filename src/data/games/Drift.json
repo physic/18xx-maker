@@ -163,8 +163,12 @@
           }
         ],
         "values": [{"value": 40, "angle": 180, "percent": 0.6}],
-        "track": [{"side": 6, "type": "offboard"}],
-        "hexes": ["A1"]
+        "track": [{"side": 1, "type": "offboard"}],
+        "hexes": ["D2"]
+      },
+      {
+        "color": "water",
+        "hexes": ["C1"]
       },
       {
         "color": "water",
@@ -176,19 +180,28 @@
         "values": [{"value": 20, "percent": -0.6}],
         "track": [{"side": 3, "type": "offboard"}],
         "removeBorders": [6],
-        "hexes": ["D12"]
+        "hexes": ["F12"]
       },
       {
         "color": "water",
-        "icons": [
-          {
-            "type": "port"
-          }
-        ],
+        "icons": [{"type": "port"}],
         "values": [{"value": 20, "percent": -0.6}],
         "track": [{"side": 1, "type": "offboard"}],
         "removeBorders": [3,6],
-        "hexes": ["E13"]
+        "hexes": ["G13"]
+      },
+      {
+        "color": "water",
+        "removeBorders": [1,6],
+        "hexes": ["I11"]
+      },
+      {
+        "color": "water",
+        "icons": [{"type": "port"}],
+        "values": [{"value": 20, "percent": -0.6}],
+        "track": [{"side": 3, "type": "offboard"}],
+        "removeBorders": [2,4,5],
+        "hexes": ["I15"]
       },
       {
         "color": "water",
@@ -202,8 +215,8 @@
           {"side": 4, "type": "offboard"},
           {"side": 6, "type": "offboard"}
         ],
-        "removeBorders": [2,5],
-        "hexes": ["G13"]
+        "removeBorders": [2,3,5],
+        "hexes": ["J14"]
       },
       {
         "color": "water",
@@ -215,7 +228,7 @@
         "values": [{"value": 20, "percent": -0.6}],
         "track": [{"side": 1, "type": "offboard"}],
         "removeBorders": [2,6],
-        "hexes": ["H12"]
+        "hexes": ["K13"]
       },
       {
         "color": "water",
@@ -226,11 +239,10 @@
         ],
         "values": [{"value": 20, "percent": -0.6}],
         "track": [
-          {"side": 2, "type": "offboard"},
-          {"side": 5, "type": "offboard"}
+          {"side": 2, "type": "offboard"}
         ],
-        "removeBorders": [3],
-        "hexes": ["I13"]
+        "removeBorders": [3,6],
+        "hexes": ["L14"]
       },
       {
         "color": "water",
@@ -240,25 +252,27 @@
           }
         ],
         "values": [{"value": 20, "percent": 0.6}],
-        "track": [{"side": 4, "type": "offboard"}],
-        "hexes": ["A23"]
+        "track": [
+          {"side": 4, "type": "offboard"}
+        ],
+        "removeBorders": [3,6],
+        "hexes": ["M15"]
       },
       {
         "color": "water",
-        "icons": [
+        "track": [
           {
-            "type": "port"
+            "type": "gentle",
+            "side": 5
           }
         ],
-        "values": [{"value": 20, "percent": -0.6}],
-        "track": [{"side": 3, "type": "offboard"}],
-        "removeBorders": [1],
-        "hexes": ["P12"]
+        "removeBorders": [3,6],
+        "hexes": ["N16"]
       },
       {
         "color": "water",
-        "removeBorders": [4],
-        "hexes": ["P14"]
+        "removeBorders": [3,6],
+        "hexes": ["O17"]
       },
       {
         "color": "water",
@@ -269,11 +283,16 @@
         ],
         "values": [{"value": 40, "percent": -0.6}],
         "track": [
-          {"side": 2, "type": "offboard"},
-          {"side": 3, "type": "offboard"}
+          {"side": 6, "type": "offboard"},
+          {"side": 5, "type": "offboard"}
         ],
-        "removeBorders": [5,6],
-        "hexes": ["O21"]
+        "removeBorders": [4],
+        "hexes": ["A21"]
+      },
+      {
+        "color": "water",
+        "removeBorders": [1],
+        "hexes": ["A19"]
       },
       {
         "color": "water",
@@ -282,14 +301,19 @@
             "type": "port"
           }
         ],
-        "values": [{"value": 20, "percent": 0.6}],
+        "values": [{"value": 40, "percent": 0.6}],
         "track": [{"side": 4, "type": "offboard"}],
-        "removeBorders": [1,2],
+        "removeBorders": [1,3],
+        "hexes": ["P18"]
+      },
+      {
+        "color": "water",
+        "removeBorders": [1,4],
         "hexes": ["P20"]
       },
       {
         "color": "water",
-        "removeBorders": [3,4],
+        "removeBorders": [4],
         "hexes": ["P22"]
       },
       {
@@ -301,23 +325,18 @@
           }
         ],
         "removeBorders": [3,5],
-        "hexes": ["F14"]
+        "hexes": ["H14"]
       },
       {
         "color": "gray",
         "labels": [
           {
             "label": "Port Tresham",
-            "side": 1,
             "size": "small",
             "percent": -0.85
           }
         ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
+        "cities": [{"size": 3}],
         "offBoardRevenue": {
           "percent": 0.75,
           "revenues": [
@@ -331,827 +350,6 @@
             }
           ]
         },
-        "track": [
-          {
-            "side": 1
-          },
-          {
-            "side": 2
-          },
-          {
-            "side": 3
-          },
-          {
-            "side": 5
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "B2"
-        ]
-      },
-      {
-        "color": "copper",
-        "labels": [
-          {
-            "label": "1",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "30"
-            },
-            {
-              "color": "green",
-              "cost": "50"
-            },
-            {
-              "color": "brown",
-              "cost": "80"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 1
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 5
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "A9"
-        ]
-      },
-      {
-        "color": "copper",
-        "labels": [
-          {
-            "label": "2",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "30"
-            },
-            {
-              "color": "green",
-              "cost": "50"
-            },
-            {
-              "color": "brown",
-              "cost": "80"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 1
-          },
-          {
-            "side": 2
-          },
-          {
-            "side": 3
-          },
-          {
-            "side": 5
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "E7"
-        ]
-      },
-      {
-        "color": "copper",
-        "labels": [
-          {
-            "label": "3",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "30"
-            },
-            {
-              "color": "green",
-              "cost": "50"
-            },
-            {
-              "color": "brown",
-              "cost": "80"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 2
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "K7"
-        ]
-      },
-      {
-        "color": "copper",
-        "labels": [
-          {
-            "label": "4",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "30"
-            },
-            {
-              "color": "green",
-              "cost": "50"
-            },
-            {
-              "color": "brown",
-              "cost": "80"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 1
-          },
-          {
-            "side": 2
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 5
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "O5"
-        ]
-      },
-      {
-        "color": "copper",
-        "labels": [
-          {
-            "label": "5",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "30"
-            },
-            {
-              "color": "green",
-              "cost": "50"
-            },
-            {
-              "color": "brown",
-              "cost": "80"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 1
-          },
-          {
-            "side": 3
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 5
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "G17"
-        ]
-      },
-      {
-        "color": "copper",
-        "labels": [
-          {
-            "label": "6",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "30"
-            },
-            {
-              "color": "green",
-              "cost": "50"
-            },
-            {
-              "color": "brown",
-              "cost": "80"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 3
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "C23"
-        ]
-      },
-      {
-        "color": "copper",
-        "labels": [
-          {
-            "label": "7",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "30"
-            },
-            {
-              "color": "green",
-              "cost": "50"
-            },
-            {
-              "color": "brown",
-              "cost": "80"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 1
-          },
-          {
-            "side": 2
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 5
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "G19"
-        ]
-      },
-      {
-        "color": "copper",
-        "labels": [
-          {
-            "label": "8",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "30"
-            },
-            {
-              "color": "green",
-              "cost": "50"
-            },
-            {
-              "color": "brown",
-              "cost": "80"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 2
-          },
-          {
-            "side": 3
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 5
-          }
-        ],
-        "hexes": [
-          "K19"
-        ]
-      },
-      {
-        "color": "silver",
-        "labels": [
-          {
-            "label": "9",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "40"
-            },
-            {
-              "color": "green",
-              "cost": "60"
-            },
-            {
-              "color": "brown",
-              "cost": "100"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 1
-          },
-          {
-            "side": 2
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "E1"
-        ]
-      },
-      {
-        "color": "silver",
-        "labels": [
-          {
-            "label": "10",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "40"
-            },
-            {
-              "color": "green",
-              "cost": "60"
-            },
-            {
-              "color": "brown",
-              "cost": "100"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 2
-          },
-          {
-            "side": 3
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "I11"
-        ]
-      },
-      {
-        "color": "silver",
-        "labels": [
-          {
-            "label": "11",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "40"
-            },
-            {
-              "color": "green",
-              "cost": "60"
-            },
-            {
-              "color": "brown",
-              "cost": "100"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 1
-          },
-          {
-            "side": 2
-          },
-          {
-            "side": 3
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 5
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "O9"
-        ]
-      },
-      {
-        "color": "silver",
-        "labels": [
-          {
-            "label": "12",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "40"
-            },
-            {
-              "color": "green",
-              "cost": "60"
-            },
-            {
-              "color": "brown",
-              "cost": "100"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 1
-          },
-          {
-            "side": 2
-          },
-          {
-            "side": 5
-          },
-          {
-            "side": 6
-          }
-        ],
-        "hexes": [
-          "L22"
-        ]
-      },
-      {
-        "color": "gold",
-        "labels": [
-          {
-            "label": "13",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "60"
-            },
-            {
-              "color": "green",
-              "cost": "80"
-            },
-            {
-              "color": "brown",
-              "cost": "120"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 1
-          },
-          {
-            "side": 2
-          },
-          {
-            "side": 3
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 5
-          }
-        ],
-        "hexes": [
-          "M3"
-        ]
-      },
-      {
-        "color": "gold",
-        "labels": [
-          {
-            "label": "14",
-            "angle": 25,
-            "side": 1,
-            "percent": -0.9
-          },
-          {
-            "label": "M",
-            "angle": -25,
-            "side": 1,
-            "percent": -0.9
-          }
-        ],
-        "cities": [
-          {
-            "size": 3
-          }
-        ],
-        "offBoardRevenue": {
-          "percent": 0.75,
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "60"
-            },
-            {
-              "color": "green",
-              "cost": "80"
-            },
-            {
-              "color": "brown",
-              "cost": "120"
-            }
-          ]
-        },
-        "track": [
-          {
-            "side": 3
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 5
-          }
-        ],
-        "hexes": [
-          "F24"
-        ]
-      },
-      {
-        "color": "white",
-        "labels": [
-          {
-            "label":"West"
-          }
-        ],
         "track": [
           {"side": 1},
           {"side": 2},
@@ -1160,69 +358,512 @@
           {"side": 5},
           {"side": 6}
         ],
-        "cities":[
-          {
-            "size": 4
-          }
-        ],
-        "hexes": ["C15"]
+        "hexes": ["D4"]
       },
       {
-        "color": "white",
+        "color": "copper",
         "labels": [
+          {"label": "1", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [
           {
-            "label":"East"
+            "size": 3
           }
         ],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "50"
+            },
+            {
+              "color": "green",
+              "cost": "50"
+            },
+            {
+              "color": "brown",
+              "cost": "50"
+            }
+          ]
+        },
         "track": [
           {"side": 1},
-          {"side": 2},
-          {"side": 3},
           {"side": 4},
           {"side": 5},
           {"side": 6}
         ],
-        "cities":[
-          {
-            "size": 4
-          }
-        ],
-        "hexes": ["N16"]
+        "hexes": ["A9"]
       },
       {
-        "color": "white",
+        "color": "copper",
         "labels": [
-          {
-            "label":"North"
-          }
+          {"label": "2", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
         ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "50"
+            },
+            {
+              "color": "green",
+              "cost": "50"
+            },
+            {
+              "color": "brown",
+              "cost": "50"
+            }
+          ]
+        },
         "track": [
           {"side": 2},
           {"side": 3},
           {"side": 4},
           {"side": 5}
         ],
-        "cities":[
-          {
-            "size": 4
-          }
-        ],
         "hexes": ["I5"]
+      },
+      {
+        "color": "copper",
+        "labels": [
+          {"label": "3", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "50"
+            },
+            {
+              "color": "green",
+              "cost": "50"
+            },
+            {
+              "color": "brown",
+              "cost": "50"
+            }
+          ]
+        },
+        "track": [
+          {"side": 2},
+          {"side": 4},
+          {"side": 6}
+        ],
+        "hexes": ["K7"]
+      },
+      {
+        "color": "copper",
+        "labels": [
+          {"label": "4", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}
+        ],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "50"
+            },
+            {
+              "color": "green",
+              "cost": "50"
+            },
+            {
+              "color": "brown",
+              "cost": "50"
+            }
+          ]
+        },
+        "track": [
+          {"side": 1},
+          {"side": 2},
+          {"side": 4},
+          {"side": 5},
+          {"side": 6}
+        ],
+        "hexes": ["O5"]
+      },
+      {
+        "color": "copper",
+        "labels": [
+          {"label": "5", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "50"
+            },
+            {
+              "color": "green",
+              "cost": "50"
+            },
+            {
+              "color": "brown",
+              "cost": "50"
+            }
+          ]
+        },
+        "track": [
+          {"side": 1},
+          {"side": 3},
+          {"side": 4},
+          {"side": 5},
+          {"side": 6}
+        ],
+        "hexes": ["G17"]
+      },
+      {
+        "color": "copper",
+        "labels": [
+          {"label": "6", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "50"
+            },
+            {
+              "color": "green",
+              "cost": "50"
+            },
+            {
+              "color": "brown",
+              "cost": "50"
+            }
+          ]
+        },
+        "track": [
+          {"side": 3},
+          {"side": 4},
+          {"side": 6}
+        ],
+        "hexes": ["C23"]
+      },
+      {
+        "color": "copper",
+        "labels": [
+          {"label": "7", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "50"
+            },
+            {
+              "color": "green",
+              "cost": "50"
+            },
+            {
+              "color": "brown",
+              "cost": "50"
+            }
+          ]
+        },
+        "track": [
+          {"side": 1},
+          {"side": 2},
+          {"side": 4},
+          {"side": 5},
+          {"side": 6}
+        ],
+        "hexes": ["G19"]
+      },
+      {
+        "color": "copper",
+        "labels": [
+          {"label": "8", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "50"
+            },
+            {
+              "color": "green",
+              "cost": "50"
+            },
+            {
+              "color": "brown",
+              "cost": "50"
+            }
+          ]
+        },
+        "track": [
+          {"side": 2},
+          {"side": 3},
+          {"side": 4},
+          {"side": 5}
+        ],
+        "hexes": ["K19"]
+      },
+      {
+        "color": "silver",
+        "labels": [
+          {"label": "9", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "40"
+            },
+            {
+              "color": "green",
+              "cost": "60"
+            },
+            {
+              "color": "brown",
+              "cost": "80"
+            }
+          ]
+        },
+        "track": [
+          {"side": 1},
+          {"side": 2},
+          {"side": 6}
+        ],
+        "hexes": ["G1"]
+      },
+      {
+        "color": "silver",
+        "labels": [
+          {"label": "10", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "40"
+            },
+            {
+              "color": "green",
+              "cost": "60"
+            },
+            {
+              "color": "brown",
+              "cost": "80"
+            }
+          ]
+        },
+        "track": [
+          {"side": 2},
+          {"side": 3},
+          {"side": 4},
+          {"side": 6}
+        ],
+        "hexes": ["L10"]
+      },
+      {
+        "color": "silver",
+        "labels": [
+          {"label": "11", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "40"
+            },
+            {
+              "color": "green",
+              "cost": "60"
+            },
+            {
+              "color": "brown",
+              "cost": "80"
+            }
+          ]
+        },
+        "track": [
+          {"side": 1},
+          {"side": 2},
+          {"side": 3},
+          {"side": 4},
+          {"side": 5},
+          {"side": 6}
+        ],
+        "hexes": ["O9"]
+      },
+      {
+        "color": "silver",
+        "labels": [
+          {"label": "12", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "40"
+            },
+            {
+              "color": "green",
+              "cost": "60"
+            },
+            {
+              "color": "brown",
+              "cost": "80"
+            }
+          ]
+        },
+        "track": [
+          {"side": 1},
+          {"side": 2},
+          {"side": 5},
+          {"side": 6}
+        ],
+        "hexes": ["L22"]
+      },
+      {
+        "color": "gold",
+        "labels": [
+          {"label": "13", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "0"
+            },
+            {
+              "color": "green",
+              "cost": "60"
+            },
+            {
+              "color": "brown",
+              "cost": "120"
+            }
+          ]
+        },
+        "track": [
+          {"side": 1},
+          {"side": 2},
+          {"side": 3},
+          {"side": 4},
+          {"side": 5}
+        ],
+        "hexes": ["M3"]
+      },
+      {
+        "color": "gold",
+        "labels": [
+          {"label": "14", "angle": 25, "percent": -0.9},
+          {"label": "M", "angle": -25, "percent": -0.9}
+        ],
+        "cities": [{"size": 3}],
+        "offBoardRevenue": {
+          "percent": 0.75,
+          "revenues": [
+            {
+              "color": "yellow",
+              "cost": "0"
+            },
+            {
+              "color": "green",
+              "cost": "60"
+            },
+            {
+              "color": "brown",
+              "cost": "120"
+            }
+          ]
+        },
+        "track": [
+          {"side": 3},
+          {"side": 4},
+          {"side": 5}
+        ],
+        "hexes": ["H24"]
+      },
+      {
+        "color": "white",
+        "labels": [{"label":"West"}],
+        "track": [
+          {"side": 1},
+          {"side": 2},
+          {"side": 3},
+          {"side": 4},
+          {"side": 6}
+        ],
+        "cities":[{"size": 4}],
+        "hexes": ["E13"]
+      },
+      {
+        "color": "white",
+        "labels": [{"label":"East"}],
+        "track": [
+          {"side": 1},
+          {"side": 2},
+          {"side": 3}
+        ],
+        "cities":[{"size": 4}],
+        "hexes": ["O19"]
+      },
+      {
+        "color": "white",
+        "labels": [{"label":"North"}],
+        "track": [
+          {"side": 2},
+          {"side": 3},
+          {"side": 5},
+          {"side": 6}
+        ],
+        "cities":[{"size": 4}],
+        "hexes": ["K11"]
       },
       {
         "color": "offboard",
         "labels": [
-          {
-            "label": "Portland",
-            "side": 1,
-            "size": "small",
-            "percent": -0.15
-          }
+          {"label": "Portland", "size": "small", "percent": -0.15}
         ],
         "offBoardRevenue": {
           "revenues": [
             {
               "color": "yellow",
+              "cost": "40"
+            },
+            {
+              "color": "green",
               "cost": "40"
             },
             {
@@ -1233,19 +874,10 @@
           "percent":0.15
         },
         "offBoardTrack": [
-          {
-            "side": 1
-          },
-          {
-            "side": 5
-          },
-          {
-            "side": 6
-          }
+          {"side": 1},
+          {"side": 6}
         ],
-        "hexes": [
-          "A3"
-        ]
+        "hexes": ["C3"]
       },
       {
         "color": "offboard",
@@ -1261,70 +893,19 @@
           "revenues": [
             {
               "color": "yellow",
-              "cost": "30"
+              "cost": "40"
             },
             {
               "color": "brown",
-              "cost": "60"
+              "cost": "80"
             }
           ],
           "percent": 0.15
         },
         "offBoardTrack": [
-          {
-            "side": 1
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 5
-          },
-          {
-            "side": 6
-          }
+          {"side": 6}
         ],
-        "hexes": [
-          "A15"
-        ]
-      },
-      {
-        "color": "offboard",
-        "labels": [
-          {
-            "label": "Indianapolis",
-            "side": 1,
-            "size": "small",
-            "percent": -0.15
-          }
-        ],
-        "offBoardRevenue": {
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "30"
-            },
-            {
-              "color": "brown",
-              "cost": "60"
-            }
-          ],
-          "percent": 0.15
-        },
-        "offBoardTrack": [
-          {
-            "side": 3
-          },
-          {
-            "side": 4
-          },
-          {
-            "side": 5
-          }
-        ],
-        "hexes": [
-          "J24"
-        ]
+        "hexes": ["A23"]
       },
       {
         "color": "offboard",
@@ -1350,51 +931,9 @@
           "percent": 0.15
         },
         "offBoardTrack": [
-          {
-            "side": 3
-          }
+          {"side": 3}
         ],
-        "hexes": [
-          "P24"
-        ]
-      },
-      {
-        "color": "offboard",
-        "labels": [
-          {
-            "label": "Lancaster",
-            "side": 1,
-            "size": "small",
-            "percent": -0.15
-          }
-        ],
-        "offBoardRevenue": {
-          "revenues": [
-            {
-              "color": "yellow",
-              "cost": "30"
-            },
-            {
-              "color": "brown",
-              "cost": "60"
-            }
-          ],
-          "percent": 0.15
-        },
-        "offBoardTrack": [
-          {
-            "side": 1
-          },
-          {
-            "side": 2
-          },
-          {
-            "side": 3
-          }
-        ],
-        "hexes": [
-          "P2"
-        ]
+        "hexes": ["P24"]
       },
       {
         "color": "plain",
@@ -1498,7 +1037,7 @@
         ],
         "cities": [{}],
         "hexes": [
-          "D2"
+          "H2"
         ]
       },
       {
@@ -1525,44 +1064,28 @@
       {
         "color": "plain",
         "labels": [
-          {
-            "label": "Duttonshire",
-            "side": 1,
-            "size": "small",
-            "percent": -0.5
-          },
-          {
-            "label": "est. Fo.A. 18",
-            "side": 1,
-            "size": "small",
-            "percent": 0.5
-          }
+          {"label": "Duttonshire", "size": "small", "percent": -0.5},
+          {"label": "est. Fo.A. 18", "size": "small", "percent": 0.5}
         ],
         "cities": [{}],
-        "hexes": [
-          "G11"
-        ]
+        "hexes": ["G11"]
       },
       {
         "color": "plain",
         "labels": [
           {
             "label": "Huttonshire",
-            "side": 1,
             "size": "small",
             "percent": -0.5
           },
           {
-            "label": "est. 1860",
-            "side": 1,
+            "label": "est. 1860",            "side": 1,
             "size": "small",
             "percent": 0.5
           }
         ],
         "cities": [{}],
-        "hexes": [
-          "H10"
-        ]
+        "hexes": ["H10"]
       },
       {
         "color": "plain",
@@ -1631,27 +1154,6 @@
         "color": "plain",
         "labels": [
           {
-            "label": "Ikedashi",
-            "side": 1,
-            "size": "small",
-            "percent": -0.5
-          },
-          {
-            "label": "est. 1889",
-            "side": 1,
-            "size": "small",
-            "percent": 0.5
-          }
-        ],
-        "cities": [{}],
-        "hexes": [
-          "O1"
-        ]
-      },
-      {
-        "color": "plain",
-        "labels": [
-          {
             "label": "Manziniville",
             "side": 1,
             "size": "small",
@@ -1666,7 +1168,7 @@
         ],
         "cities": [{}],
         "hexes": [
-          "N22"
+          "B22"
         ]
       },
       {
@@ -1723,7 +1225,7 @@
           }
         ],
         "hexes": [
-          "E23"
+          "I21"
         ]
       },
       {
@@ -1746,7 +1248,7 @@
           {}
         ],
         "hexes": [
-          "C3"
+          "E5"
         ]
       },
       {
@@ -1818,7 +1320,7 @@
           {}
         ],
         "hexes": [
-          "N20"
+          "B20"
         ]
       },
       {
@@ -1859,39 +1361,19 @@
           },
           {
             "label": "Port Bartell",
-            "side": 1,
             "size": "small",
             "percent": -0.5
           },
-          {
-            "label": "est. 1817",
-            "side": 1,
-            "size": "small",
-            "percent": 0.5
-          }
+          {"label": "est. 1817", "size": "small", "percent": 0.5}
         ],
-        "cities": [
-          {}
-        ],
-        "hexes": [
-          "H14"
-        ]
+        "cities": [{}],
+        "hexes": ["K15"]
       },
       {
         "color": "plain",
         "labels": [
-          {
-            "label": "Shellyville",
-            "side": 1,
-            "size": "small",
-            "percent": -0.5
-          },
-          {
-            "label": "est. 1830",
-            "side": 1,
-            "size": "small",
-            "percent": 0.5
-          }
+          {"label": "Shellyville", "size": "small", "percent": -0.5 },
+          {"label": "est. 1830", "size": "small", "percent": 0.5}
         ],
         "terrain": [
           {
@@ -1903,25 +1385,12 @@
           }
         ],
         "cities": [{}],
-        "hexes": [
-          "C11"
-        ]
+        "hexes": ["E11"]
       },
       {
         "color": "plain",
         "labels": [
-          {
-            "label": "Cutforth Pass",
-            "side": 1,
-            "size": "small",
-            "percent": -0.5
-          },
-          {
-            "label": "est. 1822",
-            "side": 1,
-            "size": "small",
-            "percent": 0.5
-          }
+          {"label": "West Campbell", "size": "small", "percent": -0.5}
         ],
         "terrain": [
           {
@@ -1933,9 +1402,7 @@
           }
         ],
         "cities": [{}],
-        "hexes": [
-          "I15"
-        ]
+        "hexes": ["L16"]
       },
       {
         "color": "plain",
@@ -1978,24 +1445,7 @@
           }
         ],
         "cities": [{}],
-        "hexes": [
-          "C5"
-        ]
-      },
-      {
-        "color": "plain",
-        "labels": [
-          {
-            "label": "Tamplin Pier",
-            "side": 1,
-            "size": "small",
-            "percent": -0.5
-          }
-        ],
-        "cities": [{}],
-        "hexes": [
-          "A21"
-        ]
+        "hexes": ["D6"]
       },
       {
         "color": "plain",
@@ -2031,7 +1481,7 @@
         "color": "plain",
         "labels": [
           {
-            "label": "Petersen Pass",
+            "label": "Port Petersen",
             "side": 1,
             "size": "small",
             "percent": -0.5
@@ -2039,22 +1489,7 @@
         ],
         "cities": [{}],
         "hexes": [
-          "J12"
-        ]
-      },
-      {
-        "color": "plain",
-        "labels": [
-          {
-            "label": "Lawson",
-            "side": 1,
-            "size": "small",
-            "percent": -0.5
-          }
-        ],
-        "cities": [{}],
-        "hexes": [
-          "L18"
+          "H12"
         ]
       },
       {
@@ -2085,21 +1520,6 @@
         "color": "plain",
         "labels": [
           {
-            "label": "West Campbell",
-            "side": 1,
-            "size": "small",
-            "percent": -0.5
-          }
-        ],
-        "cities": [{}],
-        "hexes": [
-          "M11"
-        ]
-      },
-      {
-        "color": "plain",
-        "labels": [
-          {
             "label": "Frazier",
             "side": 1,
             "size": "small",
@@ -2123,23 +1543,37 @@
         ],
         "cities": [{}],
         "hexes": [
-          "O11"
+          "M13"
         ]
       },
       {
-        "color": "plain",
+        "color": "mountain",
         "labels": [
           {
-            "label": "Mroczka",
+            "label": "Tamplin Pier",
             "side": 1,
             "size": "small",
             "percent": -0.5
           }
         ],
         "cities": [{}],
-        "hexes": [
-          "P18"
-        ]
+        "terrain": [
+          {
+            "cost": 20,
+            "angle": 90,
+            "size": "medium",
+            "type": "water",
+            "percent": 0.7
+          },
+          {
+            "cost": 40,
+            "angle": -90,
+            "size": "medium",
+            "type": "mountain",
+            "percent": 0.7
+          }
+        ],
+        "hexes": ["P16"]
       },
       {
         "color": "gray",
@@ -2157,10 +1591,9 @@
         "color": "gray",
         "hexes": [
           "D22",
-          "E5",
           "F18",
           "G5",
-          "J14",
+          "K9",
           "L6",
           "N4"
         ]
@@ -2170,9 +1603,7 @@
         "removeBorders": [5],
         "hexes": [
           "I7",
-          "J10",
-          "K21",
-          "M13"
+          "K21"
         ]
       },
       {
@@ -2180,9 +1611,7 @@
         "removeBorders": [2],
         "hexes": [
           "J6",
-          "K9",
-          "L20",
-          "N12"
+          "L20"
         ]
       },
       {
@@ -2199,45 +1628,39 @@
         "color": "mountain",
         "terrain": [
           {
-            "cost": 20,
+            "cost": 40,
             "size": "large",
             "type": "mountain"
           }
         ],
         "hexes": [
           "A7",
-          "B22",
-          "D4",
+          "B24",
           "D24",
           "F6",
           "F20",
-          "G1",
           "H8",
           "H20",
-          "I21",
           "J18",
           "J22",
           "K5",
-          "K13",
           "K17",
           "L4",
           "L8",
-          "L14",
           "M7",
           "M19",
           "M21",
           "M23",
           "N6",
           "N10",
-          "O3",
-          "O17"
+          "O3"
         ]
       },
       {
         "color": "plain",
         "terrain": [
           {
-            "cost": 10,
+            "cost": 20,
             "size": "large",
             "type": "water"
           }
@@ -2250,7 +1673,7 @@
           "D16",
           "D18",
           "E9",
-          "E11",
+          "C11",
           "E21",
           "F8",
           "F22",
@@ -2261,27 +1684,24 @@
           "I3",
           "J4",
           "J16",
-          "K15",
           "L2",
-          "L16",
-          "M15",
-          "N14",
+          "M17",
           "N18",
-          "O13"
+          "O15"
         ]
       },
       {
         "color": "mountain",
         "terrain": [
           {
-            "cost": 10,
+            "cost": 20,
             "angle": 90,
             "size": "large",
             "type": "water",
             "percent": 0.5
           },
           {
-            "cost": 20,
+            "cost": 40,
             "angle": 90,
             "size": "large",
             "type": "mountain",
@@ -2291,9 +1711,7 @@
         "hexes": [
           "B6",
           "E19",
-          "H4",
-          "M17",
-          "O19"
+          "H4"
         ]
       },
       {
@@ -2303,50 +1721,40 @@
           "A11",
           "A13",
           "A17",
-          "A19",
           "B10",
           "B12",
           "B14",
           "B16",
-          "B20",
-          "C1",
           "C13",
           "C17",
           "C21",
-          "D6",
           "D10",
           "E3",
           "E17",
           "F4",
           "F10",
-          "F12",
           "F16",
           "G3",
-          "H2",
           "H18",
           "H22",
-          "H24",
+          "J24",
           "I1",
           "I9",
           "I23",
           "J8",
           "J20",
-          "K11",
           "K23",
-          "L10",
-          "L12",
           "L24",
           "M1",
           "M9",
           "N2",
+          "N20",
           "N24",
-          "O15",
           "O23",
           "P4",
           "P6",
           "P8",
-          "P10",
-          "P16"
+          "P10"
         ]
       }
     ]
